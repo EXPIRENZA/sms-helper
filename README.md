@@ -31,6 +31,6 @@ $helper->send('+10000000000', 'Text with max length is 350 characters');
 
 Reach out to me at one of the following places!
 
-https://expirenza.com
+<https://go.expirenza.com?code=SUPPORT>
 
 info@expirenza.com
