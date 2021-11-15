@@ -35,10 +35,11 @@ class SmsHelper
     /**
      * @param string $phone
      * @param string $text
+     * @param string $extId
      * @param int $timeout
      * @return bool
      */
-    public function send($phone, $text, $timeout = 5)
+    public function send($phone, $text, $timeout = 5, $extId = null)
     {
         if (empty($phone) || empty($text)) {
             return false;
@@ -59,9 +60,10 @@ class SmsHelper
         $url         = self::API_URL;
 
         $postfields  = [
-            'key' => $this->apiKey,
-            'number' => $phone,
-            'text' => $text
+            'key'       => $this->apiKey,
+            'number'    => $phone,
+            'text'      => $text,
+            'extId'     => $extId
         ];
 
         /**

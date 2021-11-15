@@ -27,6 +27,17 @@ $helper->send('+10000000000', 'Text with max length is 350 characters');
 
 ```
 
+or 
+
+```code
+<?php
+
+$helper = new SmsHelper('some api token');
+$extId = generateSomeUuid();
+$helper->send('+10000000000', 'Text with max length is 350 characters', $extId);
+
+```
+
 ## Support
 
 Reach out to me at one of the following places!
